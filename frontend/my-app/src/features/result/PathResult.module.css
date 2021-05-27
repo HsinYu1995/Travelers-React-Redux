@@ -1,0 +1,44 @@
+.block {
+  background-color: lightgreen;
+  width: 80px;
+  margin: 10px auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.resultTitle {
+  height: 200px;
+  background-color: blueviolet;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+}
+
+.singleResult {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  font-size: 50px;
+  background-color: aqua;
+  color: white;
+}
+
+.button {
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  left: 40%;
+  top: 60%;
+  background-color: fuchsia;
+  border-radius: 5px;
+  border: 2px solid black;
+  font-size: 20px;
+  color: white;
+}

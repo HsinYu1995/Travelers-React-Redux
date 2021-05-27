@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+.title {
+  background-color: steelblue;
+  display: flex;
+  font-size: 70px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  height: 200px;
+}
+.user {
+  position: fixed;
+  right: 5%;
+  font-size: 20px;
+}
+/* .loginTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .loginButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.loginPart {
+  text-align: center;
+  border: 2px solid black;
+}
