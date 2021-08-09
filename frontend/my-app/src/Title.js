@@ -1,5 +1,5 @@
 import React from "react";
-import { useSpring, animated, Spring } from "react-spring";
+import { animated, Spring } from "react-spring";
 import "./App.css";
 import { useAuth0 } from "@auth0/auth0-react";
 import LogoutButton from "./Authentication/LogoutButton";
@@ -13,7 +13,7 @@ const Title = () => {
         {(props) => (
           <animated.div style={props} className="title">
             <div className="user">
-              <img src={user.picture} alt="User Image" />
+              <img src={user.picture} alt="User" />
               <div>{user.email}</div>
               <LogoutButton />
             </div>

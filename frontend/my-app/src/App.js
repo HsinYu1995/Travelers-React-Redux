@@ -17,7 +17,9 @@ import LoginButton from "./Authentication/LoginButton";
 import "./App.css";
 function App() {
   const search = useSelector(selectUserSearch);
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const width = window.outerWidth;
+  const height = window.outerHeight;
+  const { isAuthenticated } = useAuth0();
 
   return (
     <Router>
@@ -26,7 +28,18 @@ function App() {
           <Redirect to="/search" />
         ) : (
           <div className="loginPart">
-            <div className="loginTitle">Login Page</div>
+            <div className="loginTitle" style={{ width: width / 2 }}>
+              Path Finder App
+            </div>
+            <div
+              style={{
+                border: 1,
+                borderColor: "black",
+                borderStyle: "solid",
+                width: width / 2,
+                height: height / 2,
+                marginBottom: 20,
+              }}></div>
             <LoginButton />
           </div>
         )}
